@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved.
+-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+	
+    <bean id="topsellableproductSystemSetup" class="org.training.setup.TopsellableproductSystemSetup">
+        <!-- constructor arg injection example -->
+        <constructor-arg ref="topsellableproductService"/>
+    </bean>
+
+    <bean id="topsellableproductService" class="org.training.service.impl.DefaultTopsellableproductService">
+        <!-- setter injection example -->
+        <property name="modelService" ref="modelService"/>
+        <property name="mediaService" ref="mediaService"/>
+        <property name="flexibleSearchService" ref="flexibleSearchService"/>
+    </bean>
+
+    <bean id="topSellableDao" class="org.training.dao.impl.TopSellableDaoImpl">
+    </bean>
+
+    <bean id="topSellableService" class="org.training.service.impl.TopSellableServiceImpl">
+    </bean>
+    <bean id="topSellableUtil" class="org.training.util.TopSellableUtil">
+    </bean>
+
+    <bean id="defaultTopSellableSearchResultProductPopulator" class="org.training.search.TopSellableSearchResultVariantProductPopulator" parent="variantCommerceSearchResultProductPopulator">
+    </bean>
+    <bean id="defaultTopSellableFacetSearchQuerySortsPopulator"
+          class="org.training.search.DefaultTopSellableFacetSearchQuerySortsPopulator">
+        <property name="fieldNameTranslator" ref="fieldNameTranslator" />
+    </bean>
+    <bean parent="modifyPopulatorList">
+        <property name="list" ref="commerceSearchResultProductConverter"/>
+        <property name="add" ref="defaultTopSellableSearchResultProductPopulator"/>
+    </bean>
+    <bean parent="modifyPopulatorList">
+        <property name="list" ref="facetSearchQueryConverter"/>
+        <property name="add" ref="defaultTopSellableFacetSearchQuerySortsPopulator"/>
+    </bean>
+
+
+
+    <bean id="topSellableValueProvider" class="org.training.search.solrfacetsearch.provider.impl.TopSellableValueProvider"  parent="abstractPropertyFieldValueProvider">
+        <property name="fieldNameProvider" ref="solrFieldNameProvider"/>
+    </bean>
+</beans>
