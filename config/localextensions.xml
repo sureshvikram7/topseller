@@ -1,0 +1,173 @@
+<hybrisconfig xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='../bin/platform/resources/schemas/extensions.xsd'>
+  <extensions>
+    <path dir='${HYBRIS_BIN_DIR}' autoload='false' />
+    <extension name='yb2bacceleratorstorefront' />
+    <extension name='adaptivesearch' />
+    <extension name='adaptivesearchbackoffice' />
+    <extension name='adaptivesearchfacades' />
+    <extension name='adaptivesearchsamplesaddon' />
+    <extension name='adaptivesearchsolr' />
+    <extension name='adaptivesearchwebservices' />
+    <extension name='apiregistrybackoffice' />
+    <extension name='apiregistryservices' />
+    <extension name='assistedservicecustomerinterestsaddon' />
+    <extension name='assistedservicecustomerinterestsfacades' />
+    <extension name='assistedservicefacades' />
+    <extension name='assistedservicepromotionaddon' />
+    <extension name='assistedservicepromotionfacades' />
+    <extension name='assistedserviceservices' />
+    <extension name='assistedservicestorefront' />
+    <extension name='assistedservicewebservices' />
+    <extension name='assistedserviceyprofileaddon' />
+    <extension name='assistedserviceyprofilefacades' />
+    <extension name='yaasyprofileconnect' />
+    <extension name='b2bacceleratoraddon' />
+    <extension name='b2bacceleratorfacades' />
+    <extension name='b2bacceleratorservices' />
+    <extension name='b2bocc' />
+    <extension name='b2bocctests' />
+    <extension name='b2bwebservicescommons' />
+    <extension name='commerceorgaddon' />
+
+    <extension name='powertoolsstore' />
+    <extension name='accountsummaryaddon' />
+    <!--<extension name='b2bpunchout' />
+    <extension name='b2bpunchoutaddon' />-->
+    <extension name='savedorderforms' />
+    <extension name='savedorderformsocc' />
+    <extension name='secureportaladdon' />
+    <extension name='b2bapprovalprocess' />
+    <extension name='b2bapprovalprocessfacades' />
+    <extension name='b2bcommerce' />
+    <extension name='b2bcommercebackoffice' />
+    <extension name='b2bcommercefacades' />
+    
+    <extension name='captchaaddon' />
+
+    <extension name='wishlist' />
+    <extension name='pcmbackofficesamplesaddon' />
+    <extension name='classificationgroupsservices' />
+    <extension name='mediaconversionbackoffice' />
+    <extension name='patchesbackoffice' />
+    <extension name='pcmbackoffice' />
+    <extension name='backoffice' />
+    <extension name='backofficesolrsearch' />
+    <extension name='platformbackoffice' />
+    <extension name='ybackoffice' />
+    <extension name='yacceleratorbackoffice' />
+    <extension name='yacceleratorcore' />
+    <extension name='yacceleratorfacades' />
+    <extension name='yacceleratorinitialdata' />
+    <extension name='yacceleratorstorefront' />
+    <extension name='yaddon' />
+    <extension name='basecommerce' />
+    <extension name='basecommercebackoffice' />
+    <extension name='customerreview' />
+    <extension name='payment' />
+    <extension name='promotions' />
+    <extension name='promotionsbackoffice' />
+
+
+
+    <extension name='cockpit' />
+    <extension name='commercefacades' />
+    <extension name='commerceservices' />
+    <extension name='commerceservicesbackoffice' />
+   
+    <extension name='commercewebservicescommons' />
+    <extension name='commercewebservicestests' />
+    <extension name='yocc' />
+    <extension name='yocctests' />
+	<extension name='wwgcommerseservices' />
+
+ 
+    <extension name='acceleratorbackoffice' />
+    <extension name='acceleratorcms' />
+    <extension name='acceleratorfacades' />
+    <extension name='acceleratorocc' />
+    <extension name='acceleratorservices' />
+    <extension name='acceleratorstorefrontcommons' />
+    <extension name='addonsupport' />
+
+    <extension name='npmancillary' />
+    <extension name='b2bordermanagementfacades' />
+    <extension name='b2bordermanagementwebservices' />
+    <extension name='ordermanagementaddon' />
+    <extension name='ordermanagementfacades' />
+    <extension name='ordermanagementwebservices' />
+    <extension name='orderselfserviceaddon' />
+    <extension name='warehousing' />
+    <extension name='warehousingbackoffice' />
+    <extension name='warehousingfacades' />
+    <extension name='warehousingwebservices' />
+    <extension name='yacceleratorordermanagement' />
+
+    <extension name='adminapi' />
+    <extension name='auditreportservices' />
+    <extension name='deltadetection' />
+    <extension name='embeddedserver' />
+    <extension name='groovynature' />
+    <extension name='mediaconversion' />
+    <extension name='patches' />
+    <extension name='springintegrationlibs' />
+    <extension name='tomcatembeddedserver' />
+    <extension name='yempty' />
+    <extension name='yvoid' />
+
+
+    <extension name='ordercalculation' />
+
+    <extension name='kymaintegrationbackoffice' />
+    <extension name='kymaintegrationservices' />
+    <extension name='solrfacetsearch' />
+    <extension name='solrfacetsearchbackoffice' />
+    <extension name='solrserver' />
+    <extension name='searchbackoffice' />
+    <extension name='searchprovidercssearchbackoffice' />
+    <extension name='searchprovidercssearchservices' />
+    <extension name='searchservices' />
+    <extension name='selectivecartfacades' />
+    <extension name='selectivecartservices' />
+    <extension name='selectivecartsplitlistaddon' />
+    <extension name='cmssmartedit' />
+    <extension name='cmssmarteditwebservices' />
+    <extension name='smartedit' />
+    <extension name='smarteditaddon' />
+    <extension name='smarteditwebservices' />
+    <extension name='stocknotificationaddon' />
+    <extension name='stocknotificationfacades' />
+    <extension name='stocknotificationservices' />
+    <extension name='addonsupport' />
+    <extension name='yoccaddon' />
+    <extension name='ycommercewebservices' />
+    <extension name='testjnj' />
+
+    <extension name='cms2' />
+    <extension name='cms2lib' />
+    <extension name='cmsbackoffice' />
+    <extension name='cmscockpit' />
+    <extension name='cmsfacades' />
+    <extension name='cmsocc' />
+    <extension name='cmswebservices' />
+    <extension name='previewwebservices' />
+    <extension name='permissionsfacades' />
+    <extension name='permissionswebservices' />
+    <extension name='webservicescommons' />
+    <extension name='ywebservices' />
+    <extension name='orbeonweb' />
+    <extension name='xyformsbackoffice' />
+    <extension name='xyformsfacades' />
+    <extension name='xyformssamples' />
+    <extension name='xyformsservices' />
+    <extension name='xyformsstorefrontcommons' />
+    <extension name='xyformsweb' />
+    <extension name='xyformsweb' />
+
+    <extension name='assistedservicestorefront' />
+    <extension name='assistedservicewebservices' />
+    <extension name='assistedservicefacades' />
+    <extension name='assistedservicepromotionaddon' />
+    <extension name='topsellableproduct' />
+
+  </extensions>
+</hybrisconfig>
